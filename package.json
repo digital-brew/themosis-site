@@ -1,6 +1,6 @@
 {
   "name": "themosis",
-  "version": "2.0.0",
+  "version": "4.1.0",
   "description": "Themosis framework",
   "main": "/",
   "directories": {
@@ -19,7 +19,31 @@
   },
   "homepage": "https://github.com/themosis/themosis#readme",
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "laravel-mix": "^4.0.15"
+    "@alpinejs/collapse": "^3.12.3",
+    "@alpinejs/morph": "^3.12.3",
+    "@alpinejs/persist": "^3.12.3",
+    "@alpinejs/ui": "^3.13.2-beta.1",
+    "@babel/preset-react": "^7.17.12",
+    "alpinejs": "^3.12.3",
+    "alpinejs-head": "^1.1.2",
+    "babel-eslint": "^10.1.0",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cookies-utils": "^1.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.27.0",
+    "eslint-plugin-import": "^2.23.3",
+    "jquery": "^3.7.0",
+    "laravel-mix": "^6.0.19",
+    "postcss": "^8.3.5",
+    "postcss-custom-properties": "^12.1.7",
+    "postcss-each": "^1.1.0",
+    "postcss-import": "^14.1.0",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.52.2",
+    "sass-loader": "^13.0.0",
+    "slim-select": "^1.27.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
