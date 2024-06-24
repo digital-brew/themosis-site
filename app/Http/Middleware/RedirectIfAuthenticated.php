@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace DigitalBrew\Http\Middleware;
 
-use App\Providers\RouteServiceProvider;
 use Closure;
+use DigitalBrew\App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 

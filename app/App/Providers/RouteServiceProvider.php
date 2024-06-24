@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace DigitalBrew\App\Providers;
 
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;

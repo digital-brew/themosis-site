@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Hooks;
+namespace DigitalBrew\App\Hooks;
 
 use Themosis\Asset\AssetException;
 use Themosis\Core\Support\WordPressUrl;

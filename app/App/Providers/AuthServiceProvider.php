@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace DigitalBrew\App\Providers;
 
 use Themosis\Core\Support\Providers\AuthServiceProvider as ServiceProvider;
 

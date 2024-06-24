@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DigitalBrew\App\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Themosis\Core\Forms\FormHelper;

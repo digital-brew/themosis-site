@@ -9,7 +9,18 @@ Themosis framework is a tool to help you develop websites and web applications f
 
 Installation
 ------------
-Please see the [installation section](https://framework.themosis.com/docs/master/installation/) of the Themosis documentation.
+```
+git clone -b db git@github.com:digital-brew/themosis-site.git site
+```
+
+Project structure
+------------
+Structure of this project is inspired on the idea presented in [this video](https://codecourse.com/snippets/snippet-structuring-laravel-for-larger-projects).
+
+
+Namespace
+------------
+If you want to use custom namespace for the project search in the project directory for ***DigitalBrew*** namespace and replace it with your own.
 
 Development team
 ----------------

@@ -19,11 +19,31 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:digital-brew/framework"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:digital-brew/hooks"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:digital-brew/themosis-directives"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:digital-brew/themosis-svg"
+    },
+    {
+      "type": "vcs",
+      "url": "git@github.com:digital-brew/xtension"
     }
   ],
   "autoload": {
     "psr-4": {
-      "App\\": "app/",
+      "DigitalBrew\\": "app/",
       "Database\\Factories\\": "database/factories/",
       "Database\\Seeders\\": "database/seeders/"
     }
@@ -39,22 +59,28 @@
     "optimize-autoloader": true,
     "allow-plugins": {
       "composer/installers": true,
-      "johnpbloch/wordpress-core-installer": true
+      "johnpbloch/wordpress-core-installer": true,
+      "automattic/jetpack-autoloader": false
     }
   },
   "require": {
     "php": "^8.1",
+    "digital-brew/themosis-directives": "dev-main",
+    "digital-brew/themosis-svg": "dev-themosis",
+    "digital-brew/xtension": "dev-main",
     "johnpbloch/wordpress-core": "^6.0.0",
     "johnpbloch/wordpress-core-installer": "^2.0",
-    "themosis/framework": "^4.0"
+    "log1x/navi": "^3.0",
+    "spatie/wordpress-ray": "^1.7",
+    "themosis/framework": "^4.1"
   },
   "require-dev": {
     "fakerphp/faker": "^1.9.1",
     "laravel/pint": "^1.0",
     "mockery/mockery": "^1.4.4",
     "nunomaduro/collision": "^7.0",
-    "phpunit/phpunit": "^10.1",
-    "amphibee/themosis-ignition": "^2.1"
+    "wpackagist-plugin/query-monitor": "^3.16",
+    "phpunit/phpunit": "^10.1"
   },
   "extra":{
     "installer-paths": {

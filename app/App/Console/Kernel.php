@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console;
+namespace DigitalBrew\App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Themosis\Core\Console\Kernel as ConsoleKernel;

@@ -74,7 +74,7 @@ return [
     | directly the WordPress behavior.
     |
     */
-    'locale' => 'en_US',
+    'locale' => 'en_GB',
 
     /*
     |--------------------------------------------------------------------------
@@ -175,11 +175,13 @@ return [
         Themosis\User\UserServiceProvider::class,
 
         // Application providers
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
+        \DigitalBrew\App\Providers\AppServiceProvider::class,
+        \DigitalBrew\App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        \DigitalBrew\App\Providers\EventServiceProvider::class,
+        \DigitalBrew\App\Providers\RouteServiceProvider::class,
+
+        \DigitalBrew\ThemosisDirectives\Providers\DirectiveServiceProvider::class,
     ],
 
     /*
@@ -193,10 +195,10 @@ return [
     |
     */
     'hooks' => [
-        App\Hooks\Application::class,
-        App\Hooks\Compat::class,
-        App\Hooks\Mail::class,
-        App\Hooks\Widgets::class,
+        \DigitalBrew\App\Hooks\Application::class,
+        \DigitalBrew\App\Hooks\Compat::class,
+        \DigitalBrew\App\Hooks\Mail::class,
+        \DigitalBrew\App\Hooks\Widgets::class,
     ],
 
     /*
@@ -252,6 +254,7 @@ return [
         'UserField' => Themosis\Support\Facades\UserField::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Helpers' => DigitalBrew\App\Facades\Helpers::class,
     ],
 
     /*

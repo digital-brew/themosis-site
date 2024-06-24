@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Hooks;
+namespace DigitalBrew\App\Hooks;
 
 use Themosis\Hook\Hookable;
 use Themosis\Support\Facades\Filter;

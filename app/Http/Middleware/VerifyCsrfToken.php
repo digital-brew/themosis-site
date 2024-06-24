@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace DigitalBrew\Http\Middleware;
 
 use Themosis\Core\Http\Middleware\VerifyCsrfToken as Middleware;
 

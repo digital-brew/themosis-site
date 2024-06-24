@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace DigitalBrew\Http\Middleware;
 
 use Illuminate\Routing\Middleware\ValidateSignature as Middleware;
 

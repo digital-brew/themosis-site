@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Exceptions;
+namespace DigitalBrew\App\Exceptions;
 
 use Themosis\Core\Exceptions\Handler as ExceptionHandler;
 
