@@ -63,7 +63,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\Customer::class,
+            'model' => DigitalBrew\Domain\Customer\Models\Customer::class,
         ],
 
         // 'users' => [

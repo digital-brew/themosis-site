@@ -1,8 +1,8 @@
 {
   "preset": "laravel",
   "exclude": [
-    "htdocs/cms/",
-    "htdocs/content/plugins/",
+    "public/cms/",
+    "public/content/plugins/",
     "vendor/"
   ]
 }

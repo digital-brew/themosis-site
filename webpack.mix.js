@@ -16,7 +16,7 @@ function buildSass(dir, dest) {
 }
 
 mix
-  .setPublicPath('htdocs/dist')
+  .setPublicPath('public/dist')
 
 mix
   .js('resources/scripts/app.js', 'js')

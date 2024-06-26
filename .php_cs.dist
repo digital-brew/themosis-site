@@ -9,7 +9,7 @@ use PhpCsFixer\Finder;
 $finder = Finder::create()
     ->exclude([
         'bin',
-        'htdocs',
+        'public',
         'node_modules'
     ])
     ->in([

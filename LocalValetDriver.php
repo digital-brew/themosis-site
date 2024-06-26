@@ -12,7 +12,7 @@ class LocalValetDriver extends LaravelValetDriver
      */
     public function serves($sitePath, $siteName, $uri)
     {
-        return file_exists($sitePath.'/htdocs/cms/wp-load.php');
+        return file_exists($sitePath.'/public/cms/wp-load.php');
     }
 
     /**
@@ -25,7 +25,7 @@ class LocalValetDriver extends LaravelValetDriver
      */
     public function isStaticFile($sitePath, $siteName, $uri)
     {
-        $staticFilePath = $sitePath.'/htdocs'.$uri;
+        $staticFilePath = $sitePath.'/public'.$uri;
 
         if ($this->isActualFile($staticFilePath)) {
             return $staticFilePath;
@@ -48,16 +48,16 @@ class LocalValetDriver extends LaravelValetDriver
         $_SERVER['SERVER_NAME'] = $_SERVER['HTTP_HOST'];
 
         if (strpos($uri, '/cms/') === 0) {
-            if (is_dir($sitePath.'/htdocs'.$uri)) {
+            if (is_dir($sitePath.'/public'.$uri)) {
                 $uri = $this->forceTrailingSlash($uri);
 
-                return $sitePath.'/htdocs'.$uri.'/index.php';
+                return $sitePath.'/public'.$uri.'/index.php';
             }
 
-            return $sitePath.'/htdocs'.$uri;
+            return $sitePath.'/public'.$uri;
         }
 
-        return $sitePath.'/htdocs/index.php';
+        return $sitePath.'/public/index.php';
     }
 
     /**
